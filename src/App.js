@@ -19,6 +19,7 @@ client.onopen = function() {
               lat: position.coords.latitude,
               lng: position.coords.longitude 
             }));
+            console.log("Position: ",position);
             setTimeout(sendNumber, 2000);
           });
         }
