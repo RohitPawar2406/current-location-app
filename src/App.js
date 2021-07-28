@@ -3,7 +3,7 @@ var W3CWebSocket = require('websocket').w3cwebsocket;
 
 const App = () => {
 const onClick = () => {
-var client = new W3CWebSocket('wss://34.105.111.99:8000/', 'echo-protocol');
+var client = new W3CWebSocket('ws://34.105.111.99:8000/', 'echo-protocol');
 
 client.onerror = function() {
     console.log('Connection Error');
